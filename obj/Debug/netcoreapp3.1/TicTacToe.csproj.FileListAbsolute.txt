@@ -1,0 +1,14 @@
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.exe
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.deps.json
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.runtimeconfig.json
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.runtimeconfig.dev.json
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.dll
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\bin\Debug\netcoreapp3.1\TicTacToe.pdb
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.csproj.AssemblyReference.cache
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.AssemblyInfoInputs.cache
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.AssemblyInfo.cs
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.csproj.CoreCompileInputs.cache
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.dll
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.pdb
+Z:\Github\University Projects\Done\Minimax Algorithm\Uploaded on Github\TicTacToe\obj\Debug\netcoreapp3.1\TicTacToe.genruntimeconfig.cache
