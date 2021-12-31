@@ -202,4 +202,4 @@ By a rough estimate there are almost 40 possible moves from  our given board, if
 
 ![tree](bin/Debug/netcoreapp3.1/ref/tree.jpg)
 
-:no_entry_sign: cloning, copying or distribution of this code is strictly prohibited under any circumstances. :no_entry_sign:
+:no_entry_sign: cloning, copying or distribution of this project is strictly prohibited under any circumstances. :no_entry_sign:
