@@ -26,7 +26,7 @@ We are going to make a computer tic tac toe game, that contains two players main
 
 ###### Algorithm
 
-To solve this classic tic tac toe game, we have used Minimax Algorithm, first proved by John von Neumann in 1928. It is a recursive or a backtracking algorithm.
+To solve this classic tic tac toe game, i have used Minimax Algorithm, first proved by John von Neumann in 1928. It is a recursive or a backtracking algorithm.
 
 ![Minimax](bin/Debug/netcoreapp3.1/ref/minimax.jpg)
 
@@ -42,11 +42,11 @@ To implement this classic game, we have to learn the game and its rules. As we d
 
 And initialize it with zeros that represent that all our nine cells are empty as of now.
 
-We have to represent our players as X, O or a _ for empty space, for this purpose we have used an enum that contains these three states
+We have to represent our players as X, O or a _ for empty space, for this purpose i have used an enum that contains these three states
 
 ![Enum](bin/Debug/netcoreapp3.1/ref/enum.jpg)
 
-This whole game works with a loop, the main WHILE loop with a terminating condition of till the game ends. For the termination condition we have to assign a variable that holds the value of current state of game.
+This whole game works with a loop, the main WHILE loop with a terminating condition of till the game ends. For the termination condition i have to assign a variable that holds the value of current state of game.
 
 ![MainLoop](bin/Debug/netcoreapp3.1/ref/whileloop.jpg)
 
@@ -100,3 +100,100 @@ Some changes made along the development process to game time to time. At first, 
 
 In future maybe I will make changes to this project by allowing user to pick their mark either they want to choose X or O. or add another level of medium AI as I know my minimax code has some point where I can make changes and can make it weak but it will still be working better than randomized approach. Or what if we create 15x15 grid of tic tac toe with same rules but put two AIs against each other?
 
+## Minimax algorithm explanation
+
+![ourGrid](bin/Debug/netcoreapp3.1/ref/gridExblain.jpg)
+
+Let’s just say we are at the above point in the game, and we  are assuming its AIs Turn to make a move. Our aiOpponent method has given the above board. Running the code inside our method. <br>
+
+Int best = -1000  // Best score as a big negative number; <br>
+Now nested loops to traverse our 3x3 board  <br>
+if (found empty space in the board) <br>
+Put your mark there  Maximizing player is playing ‘O’. <br>
+
+![FirstIteration](bin/Debug/netcoreapp3.1/ref/first.jpg)
+
+We have four empty spaces, for the first iteration we went to 1st  empty space
+Now we are in the first empty space we place our mark there.
+i.e. ‘O’. <br>
+
+![SecondIteration](bin/Debug/netcoreapp3.1/ref/second.jpg)
+
+Now moving further, it’s time for recursion.
+
+``` int Currmove = minimax(g, 0, -1000, 1000, false); ``` <br>
+
+we call minimax and store its value in a variable. <br>
+
+currVal of the board, Evaluation function returns it zero.  Both checks false <br>
+
+![Arrow](bin/Debug/netcoreapp3.1/ref/arrow.jpg)
+
+![Arrow2](bin/Debug/netcoreapp3.1/ref/arrow2.jpg)
+
+Now we called it for minimizing layer
+
+![Arrow3](bin/Debug/netcoreapp3.1/ref/arrow3.jpg)
+
+So, we run the code in the else part. <br>
+Initialise int best with a big positive number, in our case it is  1000 <br>
+Traverse the board find the empty space <br>
+If (empty space found) <br>
+Place your mark <br>
+
+In minimizing case it is ‘X’ <br>
+
+![placeMark](bin/Debug/netcoreapp3.1/ref/placeMark.jpg)
+
+Now let’s take this cell for an example we found this cell as  empty space, and user played this cell too, even though it is not  an optimal move but for the sake of convenience we will move  on with this move. So, we went in the loop and place the mark  ‘X’ there. <br>
+
+Now, next part. <br>
+
+``` best = Math.Min(best, minimax(g, depth + 1, alpha, beta, true)); ``` <br>
+
+Again, recursively called MINIMAX as minimizing layer has  made its move now its maximizing turn and we are in the next depth. <br>
+Again, this board has value of 0. So, both checks are false. <br>
+
+![arrow4](bin/Debug/netcoreapp3.1/ref/arrow4.jpg)
+
+![arrow5](bin/Debug/netcoreapp3.1/ref/arrow5.jpg)
+
+Now this is Maximizing Layer so this check is true <br>
+
+![arrow6](bin/Debug/netcoreapp3.1/ref/arrow6.jpg)
+
+``` Best = -1000; ``` b<br>
+
+Traverse the new board  If (empty space found)  Place the mark there <br>
+For maximizing layer, its “O”. The new board will be <br>
+
+![arrow6](bin/Debug/netcoreapp3.1/ref/newBoard.jpg)
+
+After placing our mark in the first empty space, our board  becomes, <br>
+
+![arrow6](bin/Debug/netcoreapp3.1/ref/newestBoard.jpg)
+
+After making the move we again go to recursion. <br>
+
+``` best = Math.Max(best, minimax(g, depth + 1, alpha, beta, false)); ``` <br>
+
+Again, we call minimax for minimizing layer that is on the next depth. <br>
+At the start of the minimax function we store the value of  the board after evaluating it. So lets just do it <br>
+``` int currVal = evaluationFunction(g, depth); //Stores the score as per current state of board ```
+![finalBoard](bin/Debug/netcoreapp3.1/ref/finalBoard.jpg)
+
+Now moving to our checks. <br>
+
+![check](bin/Debug/netcoreapp3.1/ref/checks.jpg)
+
+Now code inside our check will run, That is returning the  currVal. This is the base case, no more recursions. <br>
+
+It will return this value back to the function. <br>
+
+Now we will check this value if it is greater than our best as our  best was initialised as -1000. So, it is greater we will store this  new value as our best value and the cell index from where we  got this value by placing our mark. <br>
+
+This code will run for all the empty spaces and will keep  updating the best score and the move. After iterating the whole  board. It will move the cell from where it got the best value. <br>
+
+By a rough estimate there are almost 40 possible moves from  our given board, if we choose a move of moving ‘O’ at 4th cell of  array, we will get a game tree looking like this. <br>
+
+![tree](bin/Debug/netcoreapp3.1/ref/tree.jpg)
