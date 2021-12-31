@@ -34,7 +34,7 @@ This algorithm traverses the whole game tree, by filling it up with different sc
 
 Minimax algorithm consist of two layers a maximizing layer and a minimizing layer. We as an AI are the maximizing the layer trying to the find the maximum score we can get from certain moves and for minimizing layer we are trying to minimize the score. So, the algorithm is working on two extreme parts maximize the score for AI and minimize the score for opponent.
 
-### How to implement in this code?
+### How to implement this in code?
 
 To implement this classic game, we have to learn the game and its rules. As we discussed earlier this game is usually played on 3x3 grid, so to implement this in code we have to take two-dimensional array such as:
 
@@ -162,7 +162,7 @@ Now this is Maximizing Layer so this check is true <br>
 
 ![arrow6](bin/Debug/netcoreapp3.1/ref/arrow6.jpg)
 
-``` Best = -1000; ``` b<br>
+``` Best = -1000; ``` <br>
 
 Traverse the new board  If (empty space found)  Place the mark there <br>
 For maximizing layer, its “O”. The new board will be <br>
@@ -173,13 +173,15 @@ After placing our mark in the first empty space, our board  becomes, <br>
 
 ![arrow6](bin/Debug/netcoreapp3.1/ref/newestBoard.jpg)
 
-After making the move we again go to recursion. <br>
+After making the move we go back into recursion. <br>
 
 ``` best = Math.Max(best, minimax(g, depth + 1, alpha, beta, false)); ``` <br>
 
 Again, we call minimax for minimizing layer that is on the next depth. <br>
 At the start of the minimax function we store the value of  the board after evaluating it. So lets just do it <br>
 ``` int currVal = evaluationFunction(g, depth); //Stores the score as per current state of board ```
+<br>
+
 ![finalBoard](bin/Debug/netcoreapp3.1/ref/finalBoard.jpg)
 
 Now moving to our checks. <br>
