@@ -1,5 +1,3 @@
-> :lock: VIEW ONLY :lock:
-
 # Introduction
 
 Artificial Intelligence can be defined as an intelligence exhibited by an artificial entity. Traditionally machines are considered dumb as they cannot perform tasks but with the dawn of AI this narrative can be changed. Machines can think, process information and can make decisions on them in accordance to the situation they are in. today artificial intelligence is making mark in almost all walks of life and is destined to grow.
