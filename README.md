@@ -199,5 +199,3 @@ This code will run for all the empty spaces and will keep  updating the best sco
 By a rough estimate there are almost 40 possible moves from  our given board, if we choose a move of moving ‘O’ at 4th cell of  array, we will get a game tree looking like this. <br>
 
 ![tree](bin/Debug/netcoreapp3.1/ref/tree.jpg)
-
-:no_entry_sign: cloning, copying or distribution of this project is strictly prohibited under any circumstances. :no_entry_sign:
